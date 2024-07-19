@@ -1,0 +1,4 @@
+com\docker\MSEdgeTest.class
+com\docker\SetUpGrid.class
+com\docker\ChromeTest.class
+com\docker\FireFoxTest.class
