@@ -13,7 +13,7 @@ public class ChromeTest extends SetUpGrid {
 	  
 	 ChromeOptions opt=new ChromeOptions();
 	 
-	 URL url=new URL("http://localhost:4445/wd/hub");
+	 URL url=new URL("http://52.90.34.161:4445/wd/hub");
 	 RemoteWebDriver driver=new RemoteWebDriver(url,opt);
 	 
 	 driver.get("https://www.programiz.com/sql/online-compiler/");

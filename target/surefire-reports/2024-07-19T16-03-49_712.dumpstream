@@ -1,4 +1,4 @@
-# Created at 2024-07-17T15:53:09.116
+# Created at 2024-07-19T16:03:50.435
 Boot Manifest-JAR contains absolute paths in classpath 'D:\selenium_workspace23-09\DockerDemo\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

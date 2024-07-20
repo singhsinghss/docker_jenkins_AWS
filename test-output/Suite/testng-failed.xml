@@ -8,6 +8,11 @@
           <include name="test_Edge"/>
         </methods>
       </class> <!-- com.docker.MSEdgeTest -->
+      <class name="com.docker.ChromeTest">
+        <methods>
+          <include name="test_chrome"/>
+        </methods>
+      </class> <!-- com.docker.ChromeTest -->
       <class name="com.docker.FireFoxTest">
         <methods>
           <include name="test_FireFox"/>
