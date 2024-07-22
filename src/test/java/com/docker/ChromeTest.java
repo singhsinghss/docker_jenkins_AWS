@@ -1,19 +1,21 @@
 package com.docker;
 
-import java.net.MalformedURLException;
+import java.io.IOException;
 import java.net.URL;
 
+import org.bouncycastle.jcajce.provider.symmetric.util.PBE.Util;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
-public class ChromeTest extends SetUpGrid {
+public class ChromeTest extends Utils {
   @Test
-  public void test_chrome() throws MalformedURLException {
+  public void test_chrome() throws IOException {
 	  
 	 ChromeOptions opt=new ChromeOptions();
 	 
-	 URL url=new URL("http://52.90.34.161:4445/wd/hub");
+	 String cloud_url=readTestDataFile(System.getProperty("User.dir")+"\\src\\test\\resources\\TestData\\Config.properties", "url");
+     URL url =new URL(cloud_url);
 	 RemoteWebDriver driver=new RemoteWebDriver(url,opt);
 	 
 	 driver.get("https://www.programiz.com/sql/online-compiler/");
