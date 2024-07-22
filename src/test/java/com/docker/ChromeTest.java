@@ -8,13 +8,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
-public class ChromeTest extends Utils {
+public class ChromeTest extends SetUpGrid {
   @Test
   public void test_chrome() throws IOException {
 	  
 	 ChromeOptions opt=new ChromeOptions();
 	 
-	 String cloud_url=readTestDataFile(System.getProperty("User.dir")+"\\src\\test\\resources\\TestData\\Config.properties", "url");
+	 String cloud_url=Utils.readTestDataFile(System.getProperty("user.dir")+"\\src\\test\\resources\\TestData\\Config.properties", "url");
+	 System.out.println("url is: "+cloud_url);
      URL url =new URL(cloud_url);
 	 RemoteWebDriver driver=new RemoteWebDriver(url,opt);
 	 
