@@ -6,31 +6,33 @@ import java.io.IOException;
 import org.testng.annotations.AfterSuite;
 
 import org.testng.annotations.BeforeSuite;
-
-import java.lang.Runtime;
+import java.lang.ProcessBuilder;
 
 public class SetUpGrid {
 	
   @BeforeSuite
   public void run_Docker_composeV3() throws IOException, InterruptedException {
 	  	  
-	  Runtime.getRuntime().exec("cmd /c start start-docker-compose-v3.bat");
-			 
-		/*
-		 * ProcessBuilder pb = new ProcessBuilder("start_docker_compose.sh"); Process p
-		 * = pb.start();
-		 */
-	  Thread.sleep(15000);
+	  //Runtime.getRuntime().exec("cmd /c start start-docker-compose-v3.bat");
+				
+		
+		  ProcessBuilder pb = new ProcessBuilder("start_docker_compose.sh"); 
+		  Process p = pb.start();
+		 
+		 
+	  Thread.sleep(25000);
   }
   
   @AfterSuite
   public void stop_Docker_composeV3() throws IOException, InterruptedException {
 	  
-	  Runtime.getRuntime().exec("cmd /c start stop_docker_compose_V3.bat");
-		/*
-		 * ProcessBuilder pb = new ProcessBuilder("stop_docker_compose.sh"); Process p =
-		 * pb.start();
-		 */
-	   Thread.sleep(15000);
+	//  Runtime.getRuntime().exec("cmd /c start stop_docker_compose_V3.bat");
+		
+		
+		  ProcessBuilder pb = new ProcessBuilder("stop_docker_compose.sh"); 
+		  Process p = pb.start();
+		 
+		 
+	   Thread.sleep(25000);
   }
 }

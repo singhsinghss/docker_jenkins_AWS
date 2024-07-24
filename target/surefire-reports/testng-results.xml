@@ -2,36 +2,36 @@
 <testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-22T17:53:42 EDT" name="Suite" finished-at="2024-07-22T17:54:36 EDT" duration-ms="54173">
+  <suite started-at="2024-07-24T15:34:50 EDT" name="Suite" finished-at="2024-07-24T15:35:20 EDT" duration-ms="29822">
     <groups>
     </groups>
-    <test started-at="2024-07-22T17:53:42 EDT" name="Test" finished-at="2024-07-22T17:54:36 EDT" duration-ms="54173">
+    <test started-at="2024-07-24T15:34:50 EDT" name="Test" finished-at="2024-07-24T15:35:20 EDT" duration-ms="29822">
       <class name="com.docker.MSEdgeTest">
-        <test-method signature="test_Edge()[pri:0, instance:com.docker.MSEdgeTest@52af26ee]" started-at="2024-07-22T17:53:42 EDT" name="test_Edge" finished-at="2024-07-22T17:54:33 EDT" duration-ms="51502" status="PASS">
+        <test-method signature="test_Edge()[pri:0, instance:com.docker.MSEdgeTest@52af26ee]" started-at="2024-07-24T15:34:50 EDT" name="test_Edge" finished-at="2024-07-24T15:35:01 EDT" duration-ms="11015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Edge -->
       </class> <!-- com.docker.MSEdgeTest -->
-      <class name="com.docker.FireFoxTest">
-        <test-method is-config="true" signature="run_Docker_composeV3()[pri:0, instance:com.docker.FireFoxTest@2c35e847]" started-at="2024-07-22T17:53:27 EDT" name="run_Docker_composeV3" finished-at="2024-07-22T17:53:42 EDT" duration-ms="15047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- run_Docker_composeV3 -->
-        <test-method signature="test_FireFox()[pri:0, instance:com.docker.FireFoxTest@2c35e847]" started-at="2024-07-22T17:53:42 EDT" name="test_FireFox" finished-at="2024-07-22T17:54:07 EDT" duration-ms="24784" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_FireFox -->
-        <test-method is-config="true" signature="stop_Docker_composeV3()[pri:0, instance:com.docker.FireFoxTest@2c35e847]" started-at="2024-07-22T17:54:36 EDT" name="stop_Docker_composeV3" finished-at="2024-07-22T17:54:51 EDT" duration-ms="15030" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stop_Docker_composeV3 -->
-      </class> <!-- com.docker.FireFoxTest -->
       <class name="com.docker.ChromeTest">
-        <test-method signature="test_chrome()[pri:0, instance:com.docker.ChromeTest@6fd83fc1]" started-at="2024-07-22T17:53:42 EDT" name="test_chrome" finished-at="2024-07-22T17:54:36 EDT" duration-ms="54061" status="PASS">
+        <test-method signature="test_chrome()[pri:0, instance:com.docker.ChromeTest@6fd83fc1]" started-at="2024-07-24T15:34:50 EDT" name="test_chrome" finished-at="2024-07-24T15:35:00 EDT" duration-ms="10190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_chrome -->
       </class> <!-- com.docker.ChromeTest -->
+      <class name="com.docker.FireFoxTest">
+        <test-method is-config="true" signature="run_Docker_composeV3()[pri:0, instance:com.docker.FireFoxTest@2c35e847]" started-at="2024-07-24T15:34:25 EDT" name="run_Docker_composeV3" finished-at="2024-07-24T15:34:50 EDT" duration-ms="25030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run_Docker_composeV3 -->
+        <test-method signature="test_FireFox()[pri:0, instance:com.docker.FireFoxTest@2c35e847]" started-at="2024-07-24T15:34:50 EDT" name="test_FireFox" finished-at="2024-07-24T15:35:20 EDT" duration-ms="29730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_FireFox -->
+        <test-method is-config="true" signature="stop_Docker_composeV3()[pri:0, instance:com.docker.FireFoxTest@2c35e847]" started-at="2024-07-24T15:35:20 EDT" name="stop_Docker_composeV3" finished-at="2024-07-24T15:35:45 EDT" duration-ms="25025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop_Docker_composeV3 -->
+      </class> <!-- com.docker.FireFoxTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
